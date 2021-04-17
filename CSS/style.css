@@ -1,7 +1,7 @@
 * {
     padding: 0%;
     margin: 0%;
-    font-family: 'Zen Dots';
+    /* font-family: 'Zen Dots'; */
 }
 
 :root {
@@ -38,14 +38,10 @@ header {
     justify-content:end;
     padding: 1rem; 
     position: static;
+    font-family: 'Zen Dots';
 }
 
 
-/* .header h1{
-    color: var(--not-rose);
-    display: flex;
-    justify-content: center;
-} */
 
 .content {
     grid-area: content;
@@ -60,11 +56,12 @@ header {
 label, textarea {
     font-size: large;
     letter-spacing: 1px;
-    /* font-family: 'Inconsolata', monospace; */
+    font-family: 'IBM Plex Sans', sans-serif;
     padding: 10px;
     margin-bottom: 10px;
     max-width: 500px;
     background-color: var(--bg-textarea-cyan);
+    color:black;
 }
 
 
@@ -77,7 +74,7 @@ footer {
     background-color:var(--bg-header);
     color:var(--text);
     font-size: medium;
-    font-family: 'Zen Dots';
+    /* font-family: 'Zen Dots'; */
     padding: 1rem;
     margin: 0;
     width: auto;
@@ -90,7 +87,10 @@ input[type="text" i] {
     background-color: var(--name-email-field);
     border: none;
     margin-bottom: 10px;
-    
+    width: 10em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    opacity: 50%;
+
 }
 
 
@@ -98,6 +98,10 @@ input[type="email" i] {
     background-color: var(--name-email-field);
     border: none;
     margin-bottom: 10px;
+    width: 10em;
+    /* color: var(--bg-header); */
+    font-family: 'IBM Plex Sans', sans-serif;
+    opacity: 50%;
 }
 
 input[type="submit" i] {
@@ -117,4 +121,14 @@ input[type="submit" i] {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial; */
     border: none;
+    opacity: 50%;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:black;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: black;
 }
